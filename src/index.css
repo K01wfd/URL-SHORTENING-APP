@@ -39,8 +39,9 @@
   --ff-primary: 'Poppins', sans-serif;
 
   --padding-inline: clamp(2.4rem, 8vw, 16.5rem);
+  --margin-block: clamp(1rem, 7vw, 15rem);
 }
-@media (max-width: 750px) {
+@media (max-width: 785px) {
   :root {
     --fs-nav-15: 1.8rem;
     --fs-hero-80: 4.2rem;
@@ -57,10 +58,12 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--ff-primary);
+  overflow-x: hidden;
 }
 img,
 svg {

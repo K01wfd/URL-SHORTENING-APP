@@ -48,10 +48,11 @@
 .navToggler {
   display: none;
 }
-@media (max-width: 750px) {
+@media (max-width: 785px) {
   .headerWrapper {
     gap: 0;
     position: relative;
+    padding-block: 4rem;
   }
   .navList {
     display: none;
@@ -99,7 +100,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 15%);
+    transform: translate(-50%, 10%);
     padding: 4rem 2.4rem;
     border-radius: 1rem;
     z-index: 10;
