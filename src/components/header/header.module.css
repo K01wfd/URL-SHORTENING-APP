@@ -1,14 +1,124 @@
 .headerWrapper {
+  display: flex;
+  padding-inline: var(--padding-inline);
+  padding-block: 5.5rem;
+  align-items: center;
+  font-size: var(--fs-nav-15);
+  gap: 4rem;
 }
 
 .logo {
+  max-width: 120px;
 }
 .navList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.9rem;
 }
 
-.navItem {
+.navItem a {
+  color: var(--gray-700);
+}
+.navItem a:hover {
+  color: var(--charcoal);
 }
 .headerBtnBox {
+  display: flex;
+  gap: 3.7rem;
+  margin-left: auto;
+  align-items: center;
+}
+.headerBtnBox [data-id='login'] {
+  color: var(--gray-700);
+}
+.headerBtnBox [data-id='login']:hover {
+  color: var(--charcoal);
 }
 .btnHeader {
+  padding: 0.9rem 2rem;
+  border-radius: 2.8rem;
+  color: #fff;
+  background-color: var(--cyan);
+  font-weight: 700;
+}
+.btnHeader:hover {
+  background-color: var(--light-cyan);
+}
+.navToggler {
+  display: none;
+}
+@media (max-width: 750px) {
+  .headerWrapper {
+    gap: 0;
+    position: relative;
+  }
+  .navList {
+    display: none;
+  }
+  .headerBtnBox {
+    display: none;
+  }
+  .navToggler {
+    display: block;
+    position: relative;
+    margin-left: auto;
+  }
+  .navToggler label {
+    display: block;
+    background: var(--gray-700);
+    width: 24px;
+    height: 1px;
+  }
+  .navToggler label::before,
+  .navToggler label::after {
+    content: '';
+    display: block;
+    background: var(--gray-700);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .navToggler label::before {
+    top: -0.8rem;
+  }
+  .navToggler label::after {
+    top: 0.8rem;
+  }
+  [data-id='toggler'] {
+    display: none;
+  }
+  .activeNav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+    width: 90%;
+    background: var(--violet-900);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 15%);
+    padding: 4rem 2.4rem;
+    border-radius: 1rem;
+    z-index: 10;
+  }
+  .activeNav a {
+    color: #fff;
+  }
+  .activeNav .headerBtnBox {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .btnHeader {
+    padding: 1.4rem 2.4rem;
+  }
+  .ruler {
+    width: 100%;
+    height: 1px;
+    background: var(--gray-700);
+  }
 }

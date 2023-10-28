@@ -38,9 +38,9 @@
   --fs-footer-15: 1.5rem;
   --ff-primary: 'Poppins', sans-serif;
 
-  --padding-inline: max(2.4rem, 1.25vw, 16.5rem);
+  --padding-inline: clamp(2.4rem, 8vw, 16.5rem);
 }
-@media (max-width: 425px) {
+@media (max-width: 750px) {
   :root {
     --fs-nav-15: 1.8rem;
     --fs-hero-80: 4.2rem;
