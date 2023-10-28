@@ -62,3 +62,14 @@ html {
 body {
   font-family: var(--ff-primary);
 }
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+a,
+a:link,
+a:visited {
+  display: inline-block;
+  text-decoration: none;
+}
