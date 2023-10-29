@@ -14,7 +14,7 @@
   --violet-500: #4b3f6b;
   --cyan: #2acfcf;
   --light-cyan: #9ae3e3;
-  --red: #f46262;
+  --red: #f46363;
   --gray-700: #9e9aa8;
   --gray-500: #eff1f7;
 
@@ -39,7 +39,7 @@
   --ff-primary: 'Poppins', sans-serif;
 
   --padding-inline: clamp(2.4rem, 8vw, 16.5rem);
-  --margin-block: clamp(1rem, 7vw, 15rem);
+  --margin-block: clamp(1rem, 7vw, 13rem);
 }
 @media (max-width: 785px) {
   :root {
@@ -64,6 +64,7 @@ html {
 body {
   font-family: var(--ff-primary);
   overflow-x: hidden;
+  font-weight: 500;
 }
 img,
 svg {
@@ -75,4 +76,11 @@ a:link,
 a:visited {
   display: inline-block;
   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  color: var(--charcoal);
 }

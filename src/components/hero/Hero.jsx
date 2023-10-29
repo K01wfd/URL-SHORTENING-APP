@@ -2,7 +2,7 @@ import illustration from '../../assets/images/illustration-working.svg';
 import styles from './hero.module.css';
 function Hero() {
   return (
-    <div className={styles.heroWrapper}>
+    <section className={styles.heroWrapper}>
       <div className={styles.heroDetails}>
         <h1>More than just shorter links</h1>
         <p>
@@ -19,7 +19,7 @@ function Hero() {
         className={styles.heroIllustration}
         alt='illustration image'
       />
-    </div>
+    </section>
   );
 }
 

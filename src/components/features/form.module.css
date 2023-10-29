@@ -1,0 +1,88 @@
+.formWrapper {
+  padding-inline: var(--padding-inline);
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-8rem);
+  margin-top: 5rem;
+  row-gap: 2.4rem;
+}
+
+/* FORM */
+.formWrapper form {
+  background: url('../../assets/images/bg-shorten-desktop.svg');
+  background-position: top;
+  background-size: cover;
+  padding: 5.5rem 6.4rem;
+  background-color: var(--violet-900);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: clamp(5%, 80%, 80%) clamp(15%, 20%, 20%);
+  grid-template-rows: 70px;
+  row-gap: 1.6rem;
+  column-gap: 2.4rem;
+  align-items: flex-start;
+}
+/* INPUT GROUP */
+.inputGroup {
+  display: grid;
+
+  color: var(--red);
+  row-gap: 0.8rem;
+}
+/* TEXT INPUT */
+.linkField {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  padding: 1.4rem 3.2rem;
+  font-size: var(--fs-form-20);
+  border-radius: 1rem;
+}
+
+.linkField::placeholder {
+  opacity: 0.5;
+}
+/* FIELD WHEN FOCUS */
+.linkField:focus {
+  outline: none;
+}
+/* INPUT FIELD WHEN ERROR */
+.errorField {
+  outline: 3px solid var(--red);
+  color: var(--red);
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  padding: 1.4rem 3.2rem;
+  font-size: var(--fs-form-20);
+  border-radius: 1rem;
+}
+.errorField::placeholder {
+  color: var(--red);
+  opacity: 0.5;
+}
+/* ERROR MESSAGE */
+.errorMessage {
+  font-size: var(--fs-form-16);
+  font-style: italic;
+}
+/* SHORTEN BTN */
+.shortenBtn {
+  border: none;
+  color: #fff;
+  background: var(--cyan);
+  font-size: var(--fs-form-20);
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 1.6rem 4rem;
+}
+@media (max-width: 785px) {
+  .formWrapper form {
+    background: url('../../assets/images/bg-shorten-mobile.svg');
+    padding: 2.4rem;
+    grid-template-columns: auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: var(--violet-900);
+  }
+}
