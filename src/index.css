@@ -84,3 +84,6 @@ h4 {
   font-weight: 700;
   color: var(--charcoal);
 }
+button {
+  cursor: pointer;
+}

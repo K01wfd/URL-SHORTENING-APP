@@ -1,0 +1,24 @@
+.ctaSection {
+  background: url('../../assets/images/bg-boost-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--violet-900);
+  padding-top: 5.7rem;
+  padding-bottom: 6.9rem;
+  text-align: center;
+}
+.ctaSection h2 {
+  font-size: var(--fs-cta-40);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 3.2rem;
+}
+
+@media (max-width: 785px) {
+  .ctaSection {
+    background: url('../../assets/images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: var(--violet-900);
+  }
+}

@@ -31,6 +31,18 @@
   border: none;
   font-weight: 700;
 }
+.copyBtn:hover {
+  background: var(--light-cyan);
+}
+.copiedBtn {
+  font-size: var(--fs-form-15);
+  color: #fff;
+  background: var(--violet-900);
+  border-radius: 0.5rem;
+  padding: 1rem 3.1rem;
+  border: none;
+  font-weight: 700;
+}
 @media (max-width: 785px) {
   .result {
     display: grid;

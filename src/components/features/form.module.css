@@ -76,6 +76,9 @@
   border-radius: 1rem;
   padding: 1.6rem 4rem;
 }
+.shortenBtn:hover {
+  background: var(--light-cyan);
+}
 @media (max-width: 785px) {
   .formWrapper form {
     background: url('../../assets/images/bg-shorten-mobile.svg');

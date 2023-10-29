@@ -57,8 +57,15 @@
   .navList {
     display: none;
   }
+  .navItem a:hover {
+    color: #fff;
+  }
   .headerBtnBox {
     display: none;
+  }
+
+  .headerBtnBox [data-id='login']:hover {
+    color: var(--gray-700);
   }
   .navToggler {
     display: block;

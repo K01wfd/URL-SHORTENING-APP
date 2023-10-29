@@ -2,6 +2,7 @@
   background: var(--gray-500);
 }
 .featureswrapper {
+  padding-top: 12rem;
   padding-bottom: 12rem;
   padding-inline: var(--padding-inline);
   text-align: center;
@@ -39,7 +40,7 @@
   width: clamp(50%, 50vw, 1110px);
   height: 8px;
   background-color: var(--cyan);
-  top: 40%;
+  top: 42%;
 }
 
 .feature {
@@ -68,6 +69,9 @@
 }
 
 @media (max-width: 785px) {
+  .featureswrapper {
+    padding-top: 8rem;
+  }
   .features {
     flex-direction: column;
     align-items: center;
