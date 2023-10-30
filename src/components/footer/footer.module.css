@@ -33,15 +33,6 @@
 .footerNav ul li:hover:not(:first-child) a {
   color: var(--cyan);
 }
-
-.featuresList {
-}
-
-.resourcesLinks {
-}
-.companyList {
-}
-
 .socials {
   display: flex;
   align-items: center;

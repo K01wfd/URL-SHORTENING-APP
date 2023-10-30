@@ -4,25 +4,38 @@ import formStyles from './form.module.css';
 import brand from '../../assets/images/icon-brand-recognition.svg';
 import records from '../../assets/images/icon-detailed-records.svg';
 import customise from '../../assets/images/icon-fully-customizable.svg';
-import shortenPattern from '../../assets/images/bg-shorten-desktop.svg';
 import Results from '../results/Results';
-function Features() {
+function Features({
+  readyURLs,
+  error,
+  handleInputChange,
+  onFormSubmit,
+  inputValue,
+}) {
   return (
     <section className={styles.featuresSection}>
       <div className={formStyles.formWrapper}>
-        <form action=''>
+        <form action='' onSubmit={onFormSubmit}>
           <div className={formStyles.inputGroup}>
             <input
               type='text'
               className={formStyles.linkField}
               placeholder='Shorten a link here...'
+              onChange={handleInputChange}
+              value={inputValue}
             />
-            <p className={formStyles.errorMessage}>Please add a link</p>
+            <p className={formStyles.errorMessage}>{error}</p>
           </div>
           <button className={formStyles.shortenBtn}>Shorten It!</button>
         </form>
-        <Results />
-        <Results />
+        {readyURLs.length !== 0 &&
+          readyURLs.map((url) => (
+            <Results
+              key={url.shortUrl}
+              shortLink={url.shortUrl}
+              originalLink={url.original}
+            />
+          ))}
       </div>
       <div className={styles.featureswrapper}>
         <h2>Advanced Statistics</h2>

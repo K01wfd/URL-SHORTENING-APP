@@ -87,5 +87,6 @@
     background-position: right;
     background-repeat: no-repeat;
     background-color: var(--violet-900);
+    row-gap: 3rem;
   }
 }
