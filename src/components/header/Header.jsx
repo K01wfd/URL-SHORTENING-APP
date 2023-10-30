@@ -37,7 +37,9 @@ function Header() {
             <li className={styles.navItem}>
               <a href='#'>Resources</a>
             </li>
-            <div className={styles.ruler}></div>
+            <li>
+              <div className={styles.ruler}></div>
+            </li>
             {navActive && (
               <li>
                 <div className={styles.headerBtnBox}>
